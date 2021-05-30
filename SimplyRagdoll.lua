@@ -37,51 +37,51 @@ local Close_2 = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
 local KeybindScroll = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
-local ClickTp = Instance.new("TextButton")
+local BombPaint = Instance.new("TextLabel")
 local UICorner_16 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 local UICorner_17 = Instance.new("UICorner")
-local ClickTrans = Instance.new("TextButton")
+local ClickBomb = Instance.new("TextLabel")
 local UICorner_18 = Instance.new("UICorner")
 local TextBox_2 = Instance.new("TextBox")
 local UICorner_19 = Instance.new("UICorner")
-local ClickBomb = Instance.new("TextButton")
+local ClickTp = Instance.new("TextLabel")
 local UICorner_20 = Instance.new("UICorner")
 local TextBox_3 = Instance.new("TextBox")
 local UICorner_21 = Instance.new("UICorner")
-local BombPaint = Instance.new("TextButton")
+local ClickTrans = Instance.new("TextLabel")
 local UICorner_22 = Instance.new("UICorner")
 local TextBox_4 = Instance.new("TextBox")
 local UICorner_23 = Instance.new("UICorner")
-local MapReset = Instance.new("TextButton")
+local Fly = Instance.new("TextLabel")
 local UICorner_24 = Instance.new("UICorner")
 local TextBox_5 = Instance.new("TextBox")
 local UICorner_25 = Instance.new("UICorner")
-local Fly = Instance.new("TextButton")
+local Invisibility = Instance.new("TextLabel")
 local UICorner_26 = Instance.new("UICorner")
 local TextBox_6 = Instance.new("TextBox")
 local UICorner_27 = Instance.new("UICorner")
-local NoClip = Instance.new("TextButton")
+local MapReset = Instance.new("TextLabel")
 local UICorner_28 = Instance.new("UICorner")
 local TextBox_7 = Instance.new("TextBox")
 local UICorner_29 = Instance.new("UICorner")
-local Invisibility = Instance.new("TextButton")
+local NoClip = Instance.new("TextLabel")
 local UICorner_30 = Instance.new("UICorner")
 local TextBox_8 = Instance.new("TextBox")
 local UICorner_31 = Instance.new("UICorner")
-local Seizure = Instance.new("TextButton")
+local PushTools = Instance.new("TextLabel")
 local UICorner_32 = Instance.new("UICorner")
 local TextBox_9 = Instance.new("TextBox")
 local UICorner_33 = Instance.new("UICorner")
-local AntiInvis = Instance.new("TextButton")
+local Seizure = Instance.new("TextLabel")
 local UICorner_34 = Instance.new("UICorner")
 local TextBox_10 = Instance.new("TextBox")
 local UICorner_35 = Instance.new("UICorner")
-local ZeroG = Instance.new("TextButton")
+local ZeroG = Instance.new("TextLabel")
 local UICorner_36 = Instance.new("UICorner")
 local TextBox_11 = Instance.new("TextBox")
 local UICorner_37 = Instance.new("UICorner")
-local PushTools = Instance.new("TextButton")
+local AntiInvis = Instance.new("TextLabel")
 local UICorner_38 = Instance.new("UICorner")
 local TextBox_12 = Instance.new("TextBox")
 local UICorner_39 = Instance.new("UICorner")
@@ -342,29 +342,31 @@ UIListLayout.Parent = KeybindScroll
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0, 6)
 
-ClickTp.Name = "ClickTp"
-ClickTp.Parent = KeybindScroll
-ClickTp.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-ClickTp.Size = UDim2.new(0, 205, 0, 30)
-ClickTp.ZIndex = 3
-ClickTp.Font = Enum.Font.Arial
-ClickTp.Text = "Click Teleport"
-ClickTp.TextColor3 = Color3.fromRGB(0, 0, 0)
-ClickTp.TextSize = 16.000
+BombPaint.Name = "BombPaint"
+BombPaint.Parent = KeybindScroll
+BombPaint.Active = true
+BombPaint.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+BombPaint.Selectable = true
+BombPaint.Size = UDim2.new(0, 205, 0, 30)
+BombPaint.ZIndex = 3
+BombPaint.Font = Enum.Font.Arial
+BombPaint.Text = "Bomb Paint"
+BombPaint.TextColor3 = Color3.fromRGB(0, 0, 0)
+BombPaint.TextSize = 16.000
 
 UICorner_16.CornerRadius = UDim.new(0, 3)
-UICorner_16.Parent = ClickTp
+UICorner_16.Parent = BombPaint
 
-TextBox.Parent = ClickTp
+TextBox.Parent = BombPaint
 TextBox.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox.Position = UDim2.new(0.936585069, 0, 0, 0)
-TextBox.Size = UDim2.new(0.491858184, 0, 1, 0)
+TextBox.Size = UDim2.new(0.491858512, 0, 1, 0)
 TextBox.ZIndex = 3
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.Arial
 TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.PlaceholderText = "Keybind.."
-TextBox.Text = "G"
+TextBox.Text = "N"
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
@@ -372,20 +374,22 @@ TextBox.TextWrapped = true
 UICorner_17.CornerRadius = UDim.new(0, 3)
 UICorner_17.Parent = TextBox
 
-ClickTrans.Name = "ClickTrans"
-ClickTrans.Parent = KeybindScroll
-ClickTrans.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-ClickTrans.Size = UDim2.new(0, 205, 0, 30)
-ClickTrans.ZIndex = 3
-ClickTrans.Font = Enum.Font.Arial
-ClickTrans.Text = "Click Transparency"
-ClickTrans.TextColor3 = Color3.fromRGB(0, 0, 0)
-ClickTrans.TextSize = 16.000
+ClickBomb.Name = "ClickBomb"
+ClickBomb.Parent = KeybindScroll
+ClickBomb.Active = true
+ClickBomb.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+ClickBomb.Selectable = true
+ClickBomb.Size = UDim2.new(0, 205, 0, 30)
+ClickBomb.ZIndex = 3
+ClickBomb.Font = Enum.Font.Arial
+ClickBomb.Text = "Click Bomb"
+ClickBomb.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClickBomb.TextSize = 16.000
 
 UICorner_18.CornerRadius = UDim.new(0, 3)
-UICorner_18.Parent = ClickTrans
+UICorner_18.Parent = ClickBomb
 
-TextBox_2.Parent = ClickTrans
+TextBox_2.Parent = ClickBomb
 TextBox_2.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox_2.Position = UDim2.new(0.936585069, 0, 0, 0)
 TextBox_2.Size = UDim2.new(0.491858512, 0, 1, 0)
@@ -394,7 +398,7 @@ TextBox_2.ClearTextOnFocus = false
 TextBox_2.Font = Enum.Font.Arial
 TextBox_2.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_2.PlaceholderText = "Keybind.."
-TextBox_2.Text = "Y"
+TextBox_2.Text = "B"
 TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
@@ -402,29 +406,31 @@ TextBox_2.TextWrapped = true
 UICorner_19.CornerRadius = UDim.new(0, 3)
 UICorner_19.Parent = TextBox_2
 
-ClickBomb.Name = "ClickBomb"
-ClickBomb.Parent = KeybindScroll
-ClickBomb.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-ClickBomb.Size = UDim2.new(0, 205, 0, 30)
-ClickBomb.ZIndex = 3
-ClickBomb.Font = Enum.Font.Arial
-ClickBomb.Text = "Click Bomb"
-ClickBomb.TextColor3 = Color3.fromRGB(0, 0, 0)
-ClickBomb.TextSize = 16.000
+ClickTp.Name = "ClickTp"
+ClickTp.Parent = KeybindScroll
+ClickTp.Active = true
+ClickTp.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+ClickTp.Selectable = true
+ClickTp.Size = UDim2.new(0, 205, 0, 30)
+ClickTp.ZIndex = 3
+ClickTp.Font = Enum.Font.Arial
+ClickTp.Text = "Click Teleport"
+ClickTp.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClickTp.TextSize = 16.000
 
 UICorner_20.CornerRadius = UDim.new(0, 3)
-UICorner_20.Parent = ClickBomb
+UICorner_20.Parent = ClickTp
 
-TextBox_3.Parent = ClickBomb
+TextBox_3.Parent = ClickTp
 TextBox_3.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox_3.Position = UDim2.new(0.936585069, 0, 0, 0)
-TextBox_3.Size = UDim2.new(0.491858512, 0, 1, 0)
+TextBox_3.Size = UDim2.new(0.491858184, 0, 1, 0)
 TextBox_3.ZIndex = 3
 TextBox_3.ClearTextOnFocus = false
 TextBox_3.Font = Enum.Font.Arial
 TextBox_3.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_3.PlaceholderText = "Keybind.."
-TextBox_3.Text = "B"
+TextBox_3.Text = "G"
 TextBox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_3.TextSize = 14.000
 TextBox_3.TextWrapped = true
@@ -432,20 +438,22 @@ TextBox_3.TextWrapped = true
 UICorner_21.CornerRadius = UDim.new(0, 3)
 UICorner_21.Parent = TextBox_3
 
-BombPaint.Name = "BombPaint"
-BombPaint.Parent = KeybindScroll
-BombPaint.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-BombPaint.Size = UDim2.new(0, 205, 0, 30)
-BombPaint.ZIndex = 3
-BombPaint.Font = Enum.Font.Arial
-BombPaint.Text = "Bomb Paint"
-BombPaint.TextColor3 = Color3.fromRGB(0, 0, 0)
-BombPaint.TextSize = 16.000
+ClickTrans.Name = "ClickTrans"
+ClickTrans.Parent = KeybindScroll
+ClickTrans.Active = true
+ClickTrans.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+ClickTrans.Selectable = true
+ClickTrans.Size = UDim2.new(0, 205, 0, 30)
+ClickTrans.ZIndex = 3
+ClickTrans.Font = Enum.Font.Arial
+ClickTrans.Text = "Click Transparency"
+ClickTrans.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClickTrans.TextSize = 16.000
 
 UICorner_22.CornerRadius = UDim.new(0, 3)
-UICorner_22.Parent = BombPaint
+UICorner_22.Parent = ClickTrans
 
-TextBox_4.Parent = BombPaint
+TextBox_4.Parent = ClickTrans
 TextBox_4.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox_4.Position = UDim2.new(0.936585069, 0, 0, 0)
 TextBox_4.Size = UDim2.new(0.491858512, 0, 1, 0)
@@ -454,7 +462,7 @@ TextBox_4.ClearTextOnFocus = false
 TextBox_4.Font = Enum.Font.Arial
 TextBox_4.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_4.PlaceholderText = "Keybind.."
-TextBox_4.Text = "N"
+TextBox_4.Text = "Y"
 TextBox_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_4.TextSize = 14.000
 TextBox_4.TextWrapped = true
@@ -462,20 +470,22 @@ TextBox_4.TextWrapped = true
 UICorner_23.CornerRadius = UDim.new(0, 3)
 UICorner_23.Parent = TextBox_4
 
-MapReset.Name = "MapReset"
-MapReset.Parent = KeybindScroll
-MapReset.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-MapReset.Size = UDim2.new(0, 205, 0, 30)
-MapReset.ZIndex = 3
-MapReset.Font = Enum.Font.Arial
-MapReset.Text = "Reset Map"
-MapReset.TextColor3 = Color3.fromRGB(0, 0, 0)
-MapReset.TextSize = 16.000
+Fly.Name = "Fly"
+Fly.Parent = KeybindScroll
+Fly.Active = true
+Fly.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Fly.Selectable = true
+Fly.Size = UDim2.new(0, 205, 0, 30)
+Fly.ZIndex = 3
+Fly.Font = Enum.Font.Arial
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 16.000
 
 UICorner_24.CornerRadius = UDim.new(0, 3)
-UICorner_24.Parent = MapReset
+UICorner_24.Parent = Fly
 
-TextBox_5.Parent = MapReset
+TextBox_5.Parent = Fly
 TextBox_5.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox_5.Position = UDim2.new(0.936585069, 0, 0, 0)
 TextBox_5.Size = UDim2.new(0.491858512, 0, 1, 0)
@@ -484,7 +494,7 @@ TextBox_5.ClearTextOnFocus = false
 TextBox_5.Font = Enum.Font.Arial
 TextBox_5.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_5.PlaceholderText = "Keybind.."
-TextBox_5.Text = "M"
+TextBox_5.Text = "E"
 TextBox_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_5.TextSize = 14.000
 TextBox_5.TextWrapped = true
@@ -492,29 +502,31 @@ TextBox_5.TextWrapped = true
 UICorner_25.CornerRadius = UDim.new(0, 3)
 UICorner_25.Parent = TextBox_5
 
-Fly.Name = "Fly"
-Fly.Parent = KeybindScroll
-Fly.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-Fly.Size = UDim2.new(0, 205, 0, 30)
-Fly.ZIndex = 3
-Fly.Font = Enum.Font.Arial
-Fly.Text = "Fly"
-Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fly.TextSize = 16.000
+Invisibility.Name = "Invisibility"
+Invisibility.Parent = KeybindScroll
+Invisibility.Active = true
+Invisibility.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Invisibility.Selectable = true
+Invisibility.Size = UDim2.new(0, 205, 0, 30)
+Invisibility.ZIndex = 3
+Invisibility.Font = Enum.Font.Arial
+Invisibility.Text = "Invisibility"
+Invisibility.TextColor3 = Color3.fromRGB(0, 0, 0)
+Invisibility.TextSize = 16.000
 
 UICorner_26.CornerRadius = UDim.new(0, 3)
-UICorner_26.Parent = Fly
+UICorner_26.Parent = Invisibility
 
-TextBox_6.Parent = Fly
+TextBox_6.Parent = Invisibility
 TextBox_6.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextBox_6.Position = UDim2.new(0.936585069, 0, 0, 0)
-TextBox_6.Size = UDim2.new(0.491858512, 0, 1, 0)
+TextBox_6.Position = UDim2.new(0.936584771, 0, 0, 0)
+TextBox_6.Size = UDim2.new(0.49185881, 0, 1, 0)
 TextBox_6.ZIndex = 3
 TextBox_6.ClearTextOnFocus = false
 TextBox_6.Font = Enum.Font.Arial
 TextBox_6.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_6.PlaceholderText = "Keybind.."
-TextBox_6.Text = "E"
+TextBox_6.Text = "V"
 TextBox_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_6.TextSize = 14.000
 TextBox_6.TextWrapped = true
@@ -522,20 +534,22 @@ TextBox_6.TextWrapped = true
 UICorner_27.CornerRadius = UDim.new(0, 3)
 UICorner_27.Parent = TextBox_6
 
-NoClip.Name = "NoClip"
-NoClip.Parent = KeybindScroll
-NoClip.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-NoClip.Size = UDim2.new(0, 205, 0, 30)
-NoClip.ZIndex = 3
-NoClip.Font = Enum.Font.Arial
-NoClip.Text = "NoClip"
-NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
-NoClip.TextSize = 16.000
+MapReset.Name = "MapReset"
+MapReset.Parent = KeybindScroll
+MapReset.Active = true
+MapReset.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+MapReset.Selectable = true
+MapReset.Size = UDim2.new(0, 205, 0, 30)
+MapReset.ZIndex = 3
+MapReset.Font = Enum.Font.Arial
+MapReset.Text = "Reset Map"
+MapReset.TextColor3 = Color3.fromRGB(0, 0, 0)
+MapReset.TextSize = 16.000
 
 UICorner_28.CornerRadius = UDim.new(0, 3)
-UICorner_28.Parent = NoClip
+UICorner_28.Parent = MapReset
 
-TextBox_7.Parent = NoClip
+TextBox_7.Parent = MapReset
 TextBox_7.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox_7.Position = UDim2.new(0.936585069, 0, 0, 0)
 TextBox_7.Size = UDim2.new(0.491858512, 0, 1, 0)
@@ -544,7 +558,7 @@ TextBox_7.ClearTextOnFocus = false
 TextBox_7.Font = Enum.Font.Arial
 TextBox_7.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_7.PlaceholderText = "Keybind.."
-TextBox_7.Text = "R"
+TextBox_7.Text = "M"
 TextBox_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_7.TextSize = 14.000
 TextBox_7.TextWrapped = true
@@ -552,29 +566,31 @@ TextBox_7.TextWrapped = true
 UICorner_29.CornerRadius = UDim.new(0, 3)
 UICorner_29.Parent = TextBox_7
 
-Invisibility.Name = "Invisibility"
-Invisibility.Parent = KeybindScroll
-Invisibility.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-Invisibility.Size = UDim2.new(0, 205, 0, 30)
-Invisibility.ZIndex = 3
-Invisibility.Font = Enum.Font.Arial
-Invisibility.Text = "Invisibility"
-Invisibility.TextColor3 = Color3.fromRGB(0, 0, 0)
-Invisibility.TextSize = 16.000
+NoClip.Name = "NoClip"
+NoClip.Parent = KeybindScroll
+NoClip.Active = true
+NoClip.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+NoClip.Selectable = true
+NoClip.Size = UDim2.new(0, 205, 0, 30)
+NoClip.ZIndex = 3
+NoClip.Font = Enum.Font.Arial
+NoClip.Text = "NoClip"
+NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.TextSize = 16.000
 
 UICorner_30.CornerRadius = UDim.new(0, 3)
-UICorner_30.Parent = Invisibility
+UICorner_30.Parent = NoClip
 
-TextBox_8.Parent = Invisibility
+TextBox_8.Parent = NoClip
 TextBox_8.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextBox_8.Position = UDim2.new(0.936584771, 0, 0, 0)
-TextBox_8.Size = UDim2.new(0.49185881, 0, 1, 0)
+TextBox_8.Position = UDim2.new(0.936585069, 0, 0, 0)
+TextBox_8.Size = UDim2.new(0.491858512, 0, 1, 0)
 TextBox_8.ZIndex = 3
 TextBox_8.ClearTextOnFocus = false
 TextBox_8.Font = Enum.Font.Arial
 TextBox_8.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_8.PlaceholderText = "Keybind.."
-TextBox_8.Text = "V"
+TextBox_8.Text = "R"
 TextBox_8.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox_8.TextSize = 14.000
 TextBox_8.TextWrapped = true
@@ -582,24 +598,25 @@ TextBox_8.TextWrapped = true
 UICorner_31.CornerRadius = UDim.new(0, 3)
 UICorner_31.Parent = TextBox_8
 
-Seizure.Name = "Seizure"
-Seizure.Parent = KeybindScroll
-Seizure.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-Seizure.Position = UDim2.new(0, 0, 0.072580643, 0)
-Seizure.Size = UDim2.new(0, 205, 0, 30)
-Seizure.ZIndex = 3
-Seizure.Font = Enum.Font.Arial
-Seizure.Text = "Seizure"
-Seizure.TextColor3 = Color3.fromRGB(0, 0, 0)
-Seizure.TextSize = 16.000
+PushTools.Name = "PushTools"
+PushTools.Parent = KeybindScroll
+PushTools.Active = true
+PushTools.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+PushTools.Selectable = true
+PushTools.Size = UDim2.new(0, 205, 0, 30)
+PushTools.ZIndex = 3
+PushTools.Font = Enum.Font.Arial
+PushTools.Text = "Push Tools"
+PushTools.TextColor3 = Color3.fromRGB(0, 0, 0)
+PushTools.TextSize = 16.000
 
 UICorner_32.CornerRadius = UDim.new(0, 3)
-UICorner_32.Parent = Seizure
+UICorner_32.Parent = PushTools
 
-TextBox_9.Parent = Seizure
+TextBox_9.Parent = PushTools
 TextBox_9.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextBox_9.Position = UDim2.new(0.936585069, 0, 0, 0)
-TextBox_9.Size = UDim2.new(0.491858512, 0, 1, 0)
+TextBox_9.Position = UDim2.new(0.936584771, 0, 0, 0)
+TextBox_9.Size = UDim2.new(0.49185881, 0, 1, 0)
 TextBox_9.ZIndex = 3
 TextBox_9.ClearTextOnFocus = false
 TextBox_9.Font = Enum.Font.Arial
@@ -613,23 +630,26 @@ TextBox_9.TextWrapped = true
 UICorner_33.CornerRadius = UDim.new(0, 3)
 UICorner_33.Parent = TextBox_9
 
-AntiInvis.Name = "AntiInvis"
-AntiInvis.Parent = KeybindScroll
-AntiInvis.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-AntiInvis.Size = UDim2.new(0, 205, 0, 30)
-AntiInvis.ZIndex = 3
-AntiInvis.Font = Enum.Font.Arial
-AntiInvis.Text = "Anti-Invis"
-AntiInvis.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiInvis.TextSize = 16.000
+Seizure.Name = "Seizure"
+Seizure.Parent = KeybindScroll
+Seizure.Active = true
+Seizure.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Seizure.Position = UDim2.new(0, 0, 0.072580643, 0)
+Seizure.Selectable = true
+Seizure.Size = UDim2.new(0, 205, 0, 30)
+Seizure.ZIndex = 3
+Seizure.Font = Enum.Font.Arial
+Seizure.Text = "Seizure"
+Seizure.TextColor3 = Color3.fromRGB(0, 0, 0)
+Seizure.TextSize = 16.000
 
 UICorner_34.CornerRadius = UDim.new(0, 3)
-UICorner_34.Parent = AntiInvis
+UICorner_34.Parent = Seizure
 
-TextBox_10.Parent = AntiInvis
+TextBox_10.Parent = Seizure
 TextBox_10.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextBox_10.Position = UDim2.new(0.936584771, 0, 0, 0)
-TextBox_10.Size = UDim2.new(0.49185881, 0, 1, 0)
+TextBox_10.Position = UDim2.new(0.936585069, 0, 0, 0)
+TextBox_10.Size = UDim2.new(0.491858512, 0, 1, 0)
 TextBox_10.ZIndex = 3
 TextBox_10.ClearTextOnFocus = false
 TextBox_10.Font = Enum.Font.Arial
@@ -645,7 +665,9 @@ UICorner_35.Parent = TextBox_10
 
 ZeroG.Name = "ZeroG"
 ZeroG.Parent = KeybindScroll
+ZeroG.Active = true
 ZeroG.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+ZeroG.Selectable = true
 ZeroG.Size = UDim2.new(0, 205, 0, 30)
 ZeroG.ZIndex = 3
 ZeroG.Font = Enum.Font.Arial
@@ -673,20 +695,22 @@ TextBox_11.TextWrapped = true
 UICorner_37.CornerRadius = UDim.new(0, 3)
 UICorner_37.Parent = TextBox_11
 
-PushTools.Name = "PushTools"
-PushTools.Parent = KeybindScroll
-PushTools.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-PushTools.Size = UDim2.new(0, 205, 0, 30)
-PushTools.ZIndex = 3
-PushTools.Font = Enum.Font.Arial
-PushTools.Text = "Push Tools"
-PushTools.TextColor3 = Color3.fromRGB(0, 0, 0)
-PushTools.TextSize = 16.000
+AntiInvis.Name = "AntiInvis"
+AntiInvis.Parent = KeybindScroll
+AntiInvis.Active = true
+AntiInvis.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+AntiInvis.Selectable = true
+AntiInvis.Size = UDim2.new(0, 205, 0, 30)
+AntiInvis.ZIndex = 3
+AntiInvis.Font = Enum.Font.Arial
+AntiInvis.Text = "Anti-Invis"
+AntiInvis.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiInvis.TextSize = 16.000
 
 UICorner_38.CornerRadius = UDim.new(0, 3)
-UICorner_38.Parent = PushTools
+UICorner_38.Parent = AntiInvis
 
-TextBox_12.Parent = PushTools
+TextBox_12.Parent = AntiInvis
 TextBox_12.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextBox_12.Position = UDim2.new(0.936584771, 0, 0, 0)
 TextBox_12.Size = UDim2.new(0.49185881, 0, 1, 0)
@@ -910,7 +934,7 @@ UICorner_52.Parent = Seizure_2
 
 -- Scripts:
 
-local function FBNV_fake_script() -- PushAura.RippleScript 
+local function ZFCQKHM_fake_script() -- PushAura.RippleScript 
 	local script = Instance.new('LocalScript', PushAura)
 
 	local ms = game.Players.LocalPlayer:GetMouse()
@@ -936,8 +960,8 @@ local function FBNV_fake_script() -- PushAura.RippleScript
 		c:Destroy()
 	end)
 end
-coroutine.wrap(FBNV_fake_script)()
-local function TQANSK_fake_script() -- AntiRagdoll.RippleScript 
+coroutine.wrap(ZFCQKHM_fake_script)()
+local function DKQILD_fake_script() -- AntiRagdoll.RippleScript 
 	local script = Instance.new('LocalScript', AntiRagdoll)
 
 	local ms = game.Players.LocalPlayer:GetMouse()
@@ -964,24 +988,24 @@ local function TQANSK_fake_script() -- AntiRagdoll.RippleScript
 		c:Destroy()
 	end)
 end
-coroutine.wrap(TQANSK_fake_script)()
-local function KNNISWC_fake_script() -- Credit.LocalScript 
+coroutine.wrap(DKQILD_fake_script)()
+local function ZQVREC_fake_script() -- Credit.LocalScript 
 	local script = Instance.new('LocalScript', Credit)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Credit.Visible = true
 	end)
 end
-coroutine.wrap(KNNISWC_fake_script)()
-local function EZUGTE_fake_script() -- More.LocalScript 
+coroutine.wrap(ZQVREC_fake_script)()
+local function YXPBHNK_fake_script() -- More.LocalScript 
 	local script = Instance.new('LocalScript', More)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Keybinds.Visible = true
 	end)
 end
-coroutine.wrap(EZUGTE_fake_script)()
-local function RCEWW_fake_script() -- Main.Handler 
+coroutine.wrap(YXPBHNK_fake_script)()
+local function LUOYSUI_fake_script() -- Main.Handler 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(1)
@@ -1583,8 +1607,8 @@ local function RCEWW_fake_script() -- Main.Handler
 		end
 	end)
 end
-coroutine.wrap(RCEWW_fake_script)()
-local function BFMEPKG_fake_script() -- Main.Drag 
+coroutine.wrap(LUOYSUI_fake_script)()
+local function CLOAG_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1620,8 +1644,8 @@ local function BFMEPKG_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(BFMEPKG_fake_script)()
-local function ODPFZS_fake_script() -- Close.LocalScript 
+coroutine.wrap(CLOAG_fake_script)()
+local function FFSTCEL_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1629,8 +1653,8 @@ local function ODPFZS_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Position = UDim2.new(0.417, 0,0.022, 0)
 	end)
 end
-coroutine.wrap(ODPFZS_fake_script)()
-local function NXOJTYX_fake_script() -- Credit_2.Drag 
+coroutine.wrap(FFSTCEL_fake_script)()
+local function RMJJWT_fake_script() -- Credit_2.Drag 
 	local script = Instance.new('LocalScript', Credit_2)
 
 	local UIS = game:GetService('UserInputService')
@@ -1666,8 +1690,8 @@ local function NXOJTYX_fake_script() -- Credit_2.Drag
 		end
 	end)
 end
-coroutine.wrap(NXOJTYX_fake_script)()
-local function ZJHM_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(RMJJWT_fake_script)()
+local function HRBYRN_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1675,8 +1699,8 @@ local function ZJHM_fake_script() -- Close_2.LocalScript
 		script.Parent.Parent.Position = UDim2.new(0.500, 0,0.500, 0)
 	end)
 end
-coroutine.wrap(ZJHM_fake_script)()
-local function QKEDT_fake_script() -- Keybinds.Drag 
+coroutine.wrap(HRBYRN_fake_script)()
+local function WBOHMWR_fake_script() -- Keybinds.Drag 
 	local script = Instance.new('LocalScript', Keybinds)
 
 	local UIS = game:GetService('UserInputService')
@@ -1712,8 +1736,8 @@ local function QKEDT_fake_script() -- Keybinds.Drag
 		end
 	end)
 end
-coroutine.wrap(QKEDT_fake_script)()
-local function UNZLM_fake_script() -- KeybindScroll.LocalScript 
+coroutine.wrap(WBOHMWR_fake_script)()
+local function TXXUEHX_fake_script() -- KeybindScroll.LocalScript 
 	local script = Instance.new('LocalScript', KeybindScroll)
 
 	local uis = game:GetService("UserInputService")
@@ -1726,4 +1750,4 @@ local function UNZLM_fake_script() -- KeybindScroll.LocalScript
 		end
 	end
 end
-coroutine.wrap(UNZLM_fake_script)()
+coroutine.wrap(TXXUEHX_fake_script)()
