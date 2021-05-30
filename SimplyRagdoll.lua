@@ -1,5 +1,7 @@
 --//Simply Ragdoll V2 - Made By Skitchen#3661
 
+--//loadstring(game:HttpGet("https://raw.githubusercontent.com/Skitchenexe/SimplisticRagdollEngineGui/main/SimplyRagdoll.lua", true))()
+
 local SimplyRagdollV2 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
