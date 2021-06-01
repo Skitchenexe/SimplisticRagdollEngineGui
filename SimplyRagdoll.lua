@@ -241,7 +241,7 @@ Guiby.Position = UDim2.new(0.0404984429, 0, 0.5, 0)
 Guiby.Size = UDim2.new(0, 293, 0, 31)
 Guiby.ZIndex = 2
 Guiby.Font = Enum.Font.Arial
-Guiby.Text = "GUI - Skitchen#3661"
+Guiby.Text = "GUI - Skiz#3661"
 Guiby.TextColor3 = Color3.fromRGB(0, 0, 0)
 Guiby.TextSize = 18.000
 
