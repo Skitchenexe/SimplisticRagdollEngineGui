@@ -255,7 +255,7 @@ scriptingby.Position = UDim2.new(0.0404984429, 0, 0.308035731, 0)
 scriptingby.Size = UDim2.new(0, 293, 0, 31)
 scriptingby.ZIndex = 2
 scriptingby.Font = Enum.Font.Arial
-scriptingby.Text = "Scripting - Skitchen#3661"
+scriptingby.Text = "Scripting - Skiz#3661"
 scriptingby.TextColor3 = Color3.fromRGB(0, 0, 0)
 scriptingby.TextSize = 18.000
 
